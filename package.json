@@ -1,0 +1,50 @@
+{
+  "name": "@lunaticmuch/iso-3166",
+  "version": "1.0.0",
+  "description": "ISO 3166 (standard for country codes and codes for their subdivisions)",
+  "license": "MIT",
+  "keywords": [
+    "iso-3166",
+    "iso-3166-1",
+    "iso-3166-2",
+    "iso",
+    "3166",
+    "3166-1",
+    "3166-2",
+    "country",
+    "subdivision",
+    "country language",
+    "administrative language",
+    "revision",
+    "province",
+    "region",
+    "state",
+    "territory",
+    "code",
+    "name",
+    "information"
+  ],
+  "repository": "LunaticMuch/iso-3166",
+  "bugs": "https://github.com/LunaticMuch/iso-3166/issues",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/LunaticMuch"
+  },
+  "author": "Stefano Cislaghi <s.cislaghi@gmail.com> (https://stefanocislaghi.com)",
+  "contributors": [
+    "Stefano Cislaghi <s.cislaghi@gmail.com> (https://stefanocislaghi.com)"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "semi": false,
+    "trailingComma": "none"
+  }
+}
