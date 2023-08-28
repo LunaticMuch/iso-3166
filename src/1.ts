@@ -1,43 +1,6 @@
-/**
- * @typedef ISO31661Entry
- *   Object that defines codes for the names of countries, dependent territories, administrative languages
- * @property {string} name
- *   Name (example: `'Greece'`)
- * @property {string} fullName
- *   The full name (example: `'the Hellenic Republic'`)
- * @property {string} territory
- *   The description of territories in a given state (example: `'Mount Athos autonomous area'`)
- * @property {boolean} independent
- *   Whether the state is independent or not
- * @property {'assigned'} state
- *   Status of code (example: `'assigned'`)
- * @property {string} alpha2
- *   ISO 3166-1 alpha-2 code (example: `'GR'`)
- * @property {string} alpha3
- *   ISO 3166-1 alpha-3 code (example: `'GRC'`)
- * @property {string} numeric
- *   ISO 3166-1 numeric (UN M49) code (example: `'300'`)
- * @property {Array<ISO31661EntryAdministrativeLanguage>} languages
- *   Administrative languages in a State
- */
+import type {Country} from '../types/1.d.ts'
 
-/**
- * @typedef ISO31661EntryAdministrativeLanguage
- *   Object that defines administrative language in a state
- * @property {string} alpha2
- *   The ISO 639-1 2-byte code for a language, example: `'en'`
- * @property {string} alpha3
- *   The ISO 639-1 3-byte code for a language, example: `'eng'`
- * @property {string} name
- *   The ISO 639-1 language name, example `'English'`
- */
-
-/**
- * List of assigned countries.
- *
- * @type {Array<ISO31661Entry>}
- */
-export const iso31661 = [
+export const iso31661: Country[] = [
   {
     name: 'Andorra',
     fullName: 'the Principality of Andorra',
@@ -46,6 +9,7 @@ export const iso31661 = [
     alpha2: 'AD',
     alpha3: 'AND',
     numeric: '020',
+    independent: true,
     languages: [
       {
         alpha2: 'ca',
@@ -62,6 +26,7 @@ export const iso31661 = [
     alpha2: 'AE',
     alpha3: 'ARE',
     numeric: '784',
+    independent:true,
     languages: [
       {
         alpha2: 'ar',
@@ -78,6 +43,7 @@ export const iso31661 = [
     alpha2: 'AF',
     alpha3: 'AFG',
     numeric: '004',
+    independent: true,
     languages: [
       {
         alpha2: 'fa',
@@ -99,6 +65,7 @@ export const iso31661 = [
     alpha2: 'AG',
     alpha3: 'ATG',
     numeric: '028',
+    independent: true,
     languages: [
       {
         alpha2: 'en',
@@ -115,6 +82,7 @@ export const iso31661 = [
     alpha2: 'AI',
     alpha3: 'AIA',
     numeric: '660',
+    independent: false,
     languages: [
       {
         alpha2: 'en',
@@ -131,6 +99,7 @@ export const iso31661 = [
     alpha2: 'AL',
     alpha3: 'ALB',
     numeric: '008',
+    independent: true,
     languages: [
       {
         alpha2: 'sq',
@@ -147,6 +116,7 @@ export const iso31661 = [
     alpha2: 'AM',
     alpha3: 'ARM',
     numeric: '051',
+    independent: true,
     languages: [
       {
         alpha2: 'hy',
@@ -163,6 +133,7 @@ export const iso31661 = [
     alpha2: 'AO',
     alpha3: 'AGO',
     numeric: '024',
+    independent:true,
     languages: [
       {
         alpha2: 'pt',
@@ -179,6 +150,7 @@ export const iso31661 = [
     alpha2: 'AQ',
     alpha3: 'ATA',
     numeric: '010',
+    independent: false,
     languages: null
   },
   {
@@ -189,6 +161,7 @@ export const iso31661 = [
     alpha2: 'AR',
     alpha3: 'ARG',
     numeric: '032',
+    independent: true,
     languages: [
       {
         alpha2: 'es',
@@ -222,6 +195,7 @@ export const iso31661 = [
     alpha2: 'AT',
     alpha3: 'AUT',
     numeric: '040',
+    independent: true,
     languages: [
       {
         alpha2: 'de',
@@ -233,11 +207,12 @@ export const iso31661 = [
   {
     name: 'Australia',
     fullName: null,
-    territory: null,
+    territory: 'Ashmore and Cartier Islands , Coral Sea Islands , Lord Howe Island, Macquarie Island',
     state: 'assigned',
     alpha2: 'AU',
     alpha3: 'AUS',
     numeric: '036',
+    independent: true,
     languages: [
       {
         alpha2: 'en',
@@ -587,6 +562,7 @@ export const iso31661 = [
     alpha2: 'BR',
     alpha3: 'BRA',
     numeric: '076',
+    independent: true,
     languages: [
       {
         alpha2: 'pt',
@@ -711,7 +687,7 @@ export const iso31661 = [
     name: 'Canada',
     fullName: null,
     territory: null,
-    independent: null,
+    independent: true,
     state: 'assigned',
     alpha2: 'CA',
     alpha3: 'CAN',
@@ -2267,6 +2243,7 @@ export const iso31661 = [
     alpha2: 'KN',
     alpha3: 'KNA',
     numeric: '659',
+    independent: true,
     languages: [
       {
         alpha2: 'en',
@@ -2403,7 +2380,7 @@ export const iso31661 = [
     name: 'Saint Lucia',
     fullName: null,
     territory: null,
-    independent: null,
+    independent: true,
     state: 'assigned',
     alpha2: 'LC',
     alpha3: 'LCA',
@@ -4216,6 +4193,7 @@ export const iso31661 = [
     alpha2: 'TN',
     alpha3: 'TUN',
     numeric: '788',
+    independent: true,
     languages: [
       {
         alpha2: 'ar',

@@ -1,33 +1,6 @@
-/**
- * @typedef ISO31662Entry
- *   Object representing a subdivision.
- * @property {string} country
- *   ISO 3166-1 alpha-2 country code
- * @property {string} code
- *    Localized code
- * @property {string} iso_code
- *   ISO 3166-2 subdivision code formed by alpha-2 country code and local subdivision code, example: `'AE-DU'`
- * @property {string} type
- *   ISO 3166-2 type of subdivision, example: `'parish'` or `'emirate'`
- * @property {string} name
- *   The name of the subdivision, example `'Dubayy'`
- * * @property {string} variant
- *   The name of the subdivision, example `'Dubai'`
- * @property {string} language
- *   The language code for the subdivision name. It is in alpha-2 format, example `'ar`'
- * @property {string} romanization_system
- *   The system used for romanizing the localized name of the subdivision, example: `'BGN/PCGN 2007'`
- * @property {string} parent_iso_code
- *   ISO 3166-2 code for the parent subdivision, example: `'LT-KL'`
- */
+import type {Subdivision} from '../types/2.d.ts'
 
-/**
- * List of subdivisions.
- *
- * @type {Array<ISO31662Entry>}
- */
-
-export const iso31662 = [
+export const iso31662: Subdivision[] = [
   {
     country: 'AD',
     code: '07',
