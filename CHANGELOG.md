@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/LunaticMuch/iso-3166/compare/v1.0.0...v1.0.1) (2023-08-28)
+
+
+### Bug Fixes
+
+* rootDirs ([#3](https://github.com/LunaticMuch/iso-3166/issues/3)) ([c8d7a2d](https://github.com/LunaticMuch/iso-3166/commit/c8d7a2d5077e85fbd3c377db38104ee33ea8cdb2))
+
 # 1.0.0 (2023-08-28)
 
 
