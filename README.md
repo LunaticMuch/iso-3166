@@ -64,29 +64,36 @@ This package can be imported as
 import * as iso3166 from '@lunaticmuch/iso3166'
 ```
 
-### iso3166.country(country)
+### iso3166.getCountry(country)
 
 Return a country given a code. The code can be either 2-byte or 3-byte alphanumeric, or 3-byte numeric.
-If no code is provided, the helper returns the entire library content.
 
-### iso3166.subdivision(country,code)
+
+### iso3166.getSubdivisionByLocal(country,code)
 
 Return a subdivision given a country code and subdivision code.
 The country code for subdivision must be a 2-byte alphanumeric code.
-If no subdivision code is provided, then the country code will be treat as a generic and it can be used to match a specific subdivision, given the official ISO code, or a list of subdivision in a given country.
+The code for the subdivision must be a local code (the second part of the ISO code, after the hyphen).
+
 Valid examples:
 
 ```js
-iso3166.subdivision('it')
-iso3166.subdivision('it-mi')
-iso3166.subdivision('it', 'mi')
+iso3166.getSubdivisionByLocal('it', 'mi')
 ```
 
-If no code is provided, the helper returns the entire library content.
+### iso3166.getSubdivisionByISO(code)
+
+Return a subdivision given a subdivision ISO code. The subdivision ISO code is a composite code formed by the country code, in 2-byte alphanumeric format and a a subdivision local code. These two parts separated by a hyphen.
+
+Valid example:
+
+```js
+iso3166.getSubdivisionByISO('IT-MI')
+```
 
 ## Differences with other packages
 
-This package is not conceptually different from many others available online. However, they frequenly lack in consistency with ISO library as they the focus on just the code and the description.
+This package is not conceptually different from many others available online. However, they frequently lack in consistency with ISO library as they the focus on just the code and the description.
 This package mirrors exactly all the ISO library, including those additional details which are not included in other third-parties packages, e.g. languages, territories or all names for a given country.
 
 ## Limits
@@ -98,5 +105,5 @@ The package does not include:
 
 ## To Do
 
-[] - Automate some test
+[X] - Automate some test
 [] - Include 3166-3
