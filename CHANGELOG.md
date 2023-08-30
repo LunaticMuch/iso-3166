@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/LunaticMuch/iso-3166/compare/v1.0.1...v1.0.2) (2023-08-30)
+
+
+### Bug Fixes
+
+* see also ([397e082](https://github.com/LunaticMuch/iso-3166/commit/397e0827b5d1a9659d5192d981a58278ea1bee9d))
+
 ## [1.0.1](https://github.com/LunaticMuch/iso-3166/compare/v1.0.0...v1.0.1) (2023-08-28)
 
 
